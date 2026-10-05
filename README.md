@@ -1,7 +1,8 @@
 # tp2pro
 ​TP2 Programación: Integración de JavaScript y PHP​
+
 • Alumno: Agustin Solis
-​
+
 PASOS DE INTALACIÓN
 
 1. Clonar el repo.
