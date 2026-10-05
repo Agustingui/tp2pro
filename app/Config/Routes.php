@@ -21,4 +21,10 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
     $routes->post('examenes/guardar', 'Examenes::guardar');   
     $routes->post('examenes/eliminar', 'Examenes::eliminar'); 
 
+    // Preguntas
+    $routes->get('preguntas/(:num)', 'Preguntas::index/$1');
+    $routes->get('preguntas/listar/(:num)', 'Preguntas::listar/$1'); 
+    $routes->post('preguntas/guardar', 'Preguntas::guardar');
+    $routes->post('preguntas/eliminar', 'Preguntas::eliminar');
+
 });
