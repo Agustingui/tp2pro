@@ -27,4 +27,8 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
     $routes->post('preguntas/guardar', 'Preguntas::guardar');
     $routes->post('preguntas/eliminar', 'Preguntas::eliminar');
 
+    // Sorteo
+    $routes->get('sorteo/(:num)', 'Sorteo::index/$1');
+    $routes->post('sorteo/realizar', 'Sorteo::realizar');
+
 });
